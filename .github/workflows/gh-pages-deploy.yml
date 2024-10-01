@@ -18,4 +18,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.QRL_TOKEN }}
         with:
           email: stanislav.sakun@ukr.net
-          build_dir: _site
+          build_dir: dist
