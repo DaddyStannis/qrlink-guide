@@ -117,20 +117,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"neP2":[function(require,module,exports) {
-!function (w, d) {
-  if (!w.rdt) {
-    var p = w.rdt = function () {
-      p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
-    };
-    p.callQueue = [];
-    var t = d.createElement('script');
-    t.src = 'https://www.redditstatic.com/ads/pixel.js', t.async = !0;
-    var s = d.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  }
-}(window, document);
-window.rdt('init', 'a2_eec8jr0gfkmr');
-window.rdt('track', 'PageVisit');
-},{}]},{},["neP2"], null)
-//# sourceMappingURL=rdt.a2e37523.js.map
+})({"ChfJ":[function(require,module,exports) {
+(function (w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+    'gtm.start': new Date().getTime(),
+    event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s),
+    dl = l !== 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-M4BF6MQH');
+window.dataLayer = window.dataLayer || [];
+window.gtag = function () {
+  window.dataLayer.push(arguments);
+};
+window.gtag('js', new Date());
+window.gtag('config', 'G-6HLQB4RJSP');
+},{}]},{},["ChfJ"], null)
+//# sourceMappingURL=gtm.a448a053.js.map
