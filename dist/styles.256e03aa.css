@@ -844,6 +844,7 @@ body.hidden {
   height: 40px;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 
   border-radius: 100px;
   border: 1px solid var(--border-color);
@@ -1118,6 +1119,7 @@ body.hidden {
 
   .hero__view-nav {
     margin-left: 0;
+    width: 100%;
   }
 
   .hero__logo {
@@ -1342,4 +1344,4 @@ body.hidden {
 }
 
 
-/*# sourceMappingURL=styles.3d39dc1c.css.map */
+/*# sourceMappingURL=styles.256e03aa.css.map */
