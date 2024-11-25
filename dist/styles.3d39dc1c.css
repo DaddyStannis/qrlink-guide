@@ -4,6 +4,11 @@
   --background-light-color: #fff4e2;
   --border-color: #fadbae;
   --accent-color: #9b6109;
+  --font-main: 'Fira Sans';
+  --font-size: 1em;
+  --color-text-primary: #000;
+  --color-accent-primary: #9b6109;
+  --color-accent-secondary: #fdf4e4;
 }
 
 @font-face {
@@ -38,12 +43,12 @@ path {
 }
 
 body {
-  font-size: 16px;
+  font-size: var(--font-size);
   line-height: 1.54;
   min-width: 320px;
   position: relative;
-  font-family: 'Fira Sans', sans-serif;
-  color: var(--main-color);
+  font-family: var(--font-main);
+  color: var(--color-text-primary);
   margin: 0;
 }
 
@@ -217,34 +222,35 @@ body.hidden {
   background-color: #333;
 }
 
-.btn {
-  display: inline-block;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  font-size: 20px;
-  font-family: 'Fira Sans', sans-serif;
+.button {
+  width: 100%;
+  max-width: 13.5em;
+  padding: 0.9375em 0.6875em;
+  color: currentColor;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 16px */
   text-align: center;
-  border-radius: 4px;
-  padding: 4.6px 20px;
+  border: 1px solid var(--color-accent-primary);
+  border-radius: 0.25em;
 }
 
-.btn-brown {
-  background: #9b6109;
-  color: #fdf4e4;
+.button--primary {
+  color: var(--color-accent-secondary);
+  background-color: var(--color-accent-primary);
 }
 
-.btn-brown:hover {
+.button--secondary {
+  color: var(--color-accent-primary);
+  background-color: var(--color-accent-secondary);
+}
+
+.button--primary:hover {
   background: #744907;
 }
 
-.btn-brown.btn-transparent {
-  border: 1px solid #9b6109;
-  padding: 3.6px 24px;
-  background: #fff4e2;
-  color: #9b6109;
-}
-
-.btn-brown.btn-transparent:hover {
+.button--secondary:hover {
   background: #ffe5b9;
 }
 
@@ -1174,6 +1180,10 @@ body.hidden {
   position: relative;
 }
 
+.swiper--menu {
+  margin-top: 6.5em;
+}
+
 .h2--swiper {
   margin-bottom: 30px;
   text-align: center;
@@ -1299,6 +1309,10 @@ body.hidden {
     margin-top: 100px;
   }
 
+  .swiper--menu {
+    margin-top: 9.375em;
+  }
+
   .swiper__wrapper {
     padding: 0 76px;
     max-width: 1440px;
@@ -1328,4 +1342,4 @@ body.hidden {
 }
 
 
-/*# sourceMappingURL=styles.10f36207.css.map */
+/*# sourceMappingURL=styles.3d39dc1c.css.map */
